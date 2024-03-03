@@ -1,0 +1,149 @@
+/* Original CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(200deg, #89CFF0, #0050d5);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: left;
+    border: 4px solid black;
+    position: relative; /* Added */
+    top: 87.2px;
+}
+
+#logo {
+    position: absolute;
+    top: 30px; /* Adjusted */
+    left: 38.5%; /* Adjusted */
+    border-radius: 5px;
+    transform: translateX(-50%);
+    max-width: 3.2%; /* Adjusted */
+    height: auto; /* Adjusted */
+    z-index: 1;
+}
+
+
+h2 {
+    margin-top: 20%;
+    padding: 0 10%;
+    margin-bottom: 20px;
+    margin-right: -20px;
+    text-align: center;
+}
+
+input,
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 20px 1px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    flex-basis: 500%; /* Adjust as needed */
+}
+
+.datetime-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    flex-basis: 500%; /* Adjust as needed */
+}
+
+.radio-group {
+    display: inline-flex;
+    gap: 10px; /* Adjust the gap as needed */
+    padding: 10px;
+    margin: 20px;
+}  
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    margin: 0 110px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.back-link {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    #logo {
+        max-width: 50px;
+    }
+    
+    h2 {
+        margin-top: 10%;
+    }
+    
+    button {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .form-container {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    #logo {
+        max-width: 40px;
+    }
+    
+    h2 {
+        margin-top: 5%;
+    }
+    
+    button {
+        width: 80%;
+    }
+}

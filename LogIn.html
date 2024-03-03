@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/Login-styles.css">
+
+</head>
+<body>
+  <div class="login-container">
+    <a href="landpage.html" class="back-link"> < Back</a>
+    <img src="images/logo.png" alt="Logo" id="logo">
+    <h1>Dr. Quiñones Ob/Gyne Clinic</h1>
+    <h2>Login</h2>
+    <form action="" class="form">
+      <label for="username">Email</label>
+      <input type="text" id="email" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" value="LogIn" onclick="auth()">Log In</button>
+    </form>
+    
+  </div>
+  <script>
+    function auth(){
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      if(email =="admin@admin.com" && password =="admin123"){
+        window.location.assign("landpage.html");
+        alert("Login Successfully ");
+      }else{
+        alert("Invalid Information");
+        return
+      }
+    }
+  </script>
+</body>
+</html>
